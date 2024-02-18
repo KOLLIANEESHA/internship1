@@ -1,0 +1,233 @@
+html {
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+  border-radius: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-width: 300px;
+  background: linear-gradient(90deg, hsl(59, 95%, 41%) 10%, hsl(237, 92%, 15%) 100%);
+  color: rgb(220, 220, 220);
+  font-family: sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
+  
+.card-body {
+  background-color: rgba(82, 82, 82, 40%);
+  max-width: 1200px;
+  min-width: 300px;
+  height: 96.5vh;
+  padding: 5px;
+  margin: auto;
+
+  /* Hides scroll bars on IE, Edge and Firefox */
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  }
+
+/* hides scroll bars on Chromium-based browsers */
+.card-body::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD BODY CONTENT MARGIN AND PADDING */
+  
+.card-body header,
+.card-body main,
+.card-body footer {
+  padding: inherit;
+  max-width: inherit;
+  min-width: inherit;
+  margin: 5px; 
+}
+  
+header,
+footer {
+  text-align: center;
+  background-color: rgba(10, 10, 10, 40%);
+}
+  
+header > h1,
+header > p {
+  margin: 10px;
+}
+  
+/* # ELEMENTS FROM MAIN */
+  
+main > figure {
+  width: 100%;
+  max-width: inherit;
+  margin: auto;
+  text-align: center;
+}
+  
+main > figure > img {
+  width: inherit;
+  max-width: 100%; /* to meet the checkmark */
+  margin: inherit;
+  display: block;
+}
+  
+main > figure > figcaption {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(10, 10, 10, 40%);
+  display: inline-block;
+}
+  
+/* ## TIMELINE */
+  
+.info-chavez {
+  padding: 0;
+  width: 100%;
+  
+  min-width: inherit;
+  margin: 10px 0;
+  max-width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+  
+.left-bar, 
+.biography {
+  /* Hides scroll bars on IE, Edge and Firefox */
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+  
+/* Hides scroll bars on Chromium-based browsers */
+.left-bar::-webkit-scrollbar,
+.biography::-webkit-scrollbar {
+  display: none;
+}
+  
+.left-bar {
+  width: 48%;
+  height: 650px; /* just for debugging */
+  margin: 0;
+  background-color: rgba(10, 10, 10, 40%);
+}
+  
+.biography {
+  width: 48%; 
+  height: 650px; /* just for debugging */
+}
+  
+.biography-header {
+  background-color: rgb(26,28,63);
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+  
+.biography-text {
+  padding: 0 10px;
+}
+  
+.biography-text::before {
+    content: "\A";
+  }
+  
+.biography-photo {
+  object-fit: cover;
+  width: 100%;
+}
+  
+.biography-divider {
+  margin: 10px 0 20px 0;
+}
+
+.interphoto-divider {
+  margin: 10px 0;
+  height: unset;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-container {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-anchor,
+.footer-heading {
+  margin-bottom: 5px;
+}
+
+.footer-heading {
+  margin: 0;
+  padding: 10px;
+}
+
+/* COSMETICS AND POSITIONING */
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  color: yellow;
+}
+  
+figcaption,
+span,
+p,
+li,
+h2,
+h3,
+a {
+  font-size: min(3vw, 19px);
+}
+  
+hr {
+  margin: unset;
+  border: none;
+  height: 5px;
+  background-color: rgb(56, 56, 56);
+  flex-grow: 1;
+}
+  
+li {
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+  
+.indent {
+  margin-left: 1em;
+}
+  
+.heavy {
+  font-weight: 900
+}
+  
+.no-top-margin {
+  margin-top: 0;
+}
+ 
